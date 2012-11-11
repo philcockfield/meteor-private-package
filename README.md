@@ -51,6 +51,18 @@ with references these local copies, not the source location of your packages.
 After deploying, switch back to your development branch, and your back in business.
 
 
+## Commands
 
+    $ mrt-ref link
 
+Sets up the Meteorite `smart.json` file with file references to your private packages
+defined within `smart.ref` (see above).
+
+    $ mrt-ref copy
+
+Copies referenced packages in locally.
+
+    $ mrt-ref reset
+
+Removes copied references.
 
