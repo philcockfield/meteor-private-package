@@ -31,7 +31,7 @@ This provides the file references to your local smart packages:
       }
     }
 
-To switch the Meteorite file to use these reference as symbolic links:
+To switch Meteorite to use these reference as symbolic links:
 
     $ mrt-ref link
 
