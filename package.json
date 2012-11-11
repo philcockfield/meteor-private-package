@@ -1,6 +1,6 @@
 {
   "name": "meteor-private-package",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/philcockfield/meteor-package-ref",
   "engines": [ "node >=0.6.0" ],
   "description": "CLI tool for linking and copying private Meteor smart packages using Meteorite.",
