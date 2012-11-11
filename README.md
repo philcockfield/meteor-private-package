@@ -17,7 +17,7 @@ project, getting you ready to push the complete set of files to Heroku.
 Clone the repo, then add it to your global NPM toolset via.
 This will give you access to the `ref` command from the terminal:
 
-    $ npm install -g meteor-package-ref
+    npm install -g meteor-private-package
 
 
 ## Usage
