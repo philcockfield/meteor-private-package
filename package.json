@@ -20,6 +20,6 @@
   },
   "bin":
   {
-    "mrt-ref": "./bin/command.js"
+    "mrtref": "./bin/command.js"
   }
 }
