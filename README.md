@@ -48,10 +48,10 @@ To switch Meteorite to use these reference as symbolic links:
     $ mrt-ref link
 
 This will update the `smart.json` file.  Then when it comes time to deploy, switch to a new branch
-and copy in the packages (using `mrtref copy`), then `push` to your favorite cloud service:
+and copy in the packages (using `p-ref copy`), then `push` to your favorite cloud service:
 
     $ git checkout -b 'deploy'
-    $ mrtref copy
+    $ p-ref copy
 
     $ git add .
     $ git commit -m 'Ready to deploy!'
@@ -68,14 +68,14 @@ After deploying, switch back to your development branch, and your back in busine
 Set up the Meteorite `smart.json` file with file references declared
 within your `private/packages` element (see above):
 
-    $ mrtref link
+    $ p-ref link
 
 Copy referenced packages in locally to your project (see the `.packages.copy` folder):
 
-    $ mrtref copy
+    $ p-ref copy
 
 Removes copied references, (deleting the `.packages.copy` folder):
 
-    $ mrtref reset
+    $ p-ref reset
 
 
