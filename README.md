@@ -22,14 +22,26 @@ This will give you access to the `ref` command from the terminal:
 
 ## Usage
 
-Start by creating a `smart.ref` file that complements your Meteorite's `smart.json`.
-This provides the file references to your local smart packages:
+Start by creating adding a `private` element to your Meteorite's `smart.json`.
+This provides the file references to your local smart packages that are private:
 
     {
-      "packages": {
-        "package1": "../packages/my-package"
+      "meteor": {
+        "git": "https://github.com/meteor/meteor.git",
+        "branch": "master"
+      },
+      "packages": { },
+      "private": {
+        "base": "../../packages",
+        "packages": {
+          "core-users": "core-users"
+        }
       }
     }
+
+The `base` attribute is optional.  You can either specify the full working path
+in each private `package`, or you can set a common path to the directory containing
+all your packages.
 
 To switch Meteorite to use these reference as symbolic links:
 
@@ -53,16 +65,16 @@ After deploying, switch back to your development branch, and your back in busine
 
 ## Commands
 
-Set up the Meteorite `smart.json` file with file references to your private packages
-defined within `smart.ref` (see above):
+Set up the Meteorite `smart.json` file with file references declared
+within your `private/packages` element (see above):
 
     $ mrtref link
 
-Copy referenced packages in locally:
+Copy referenced packages in locally to your project (see the `.packages.copy` folder):
 
     $ mrtref copy
 
-Removes copied references:
+Removes copied references, (deleting the `.packages.copy` folder):
 
     $ mrtref reset
 
