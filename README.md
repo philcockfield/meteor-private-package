@@ -14,10 +14,9 @@ project, getting you ready to push the complete set of files to Heroku.
 
 ## Install
 
-Clone the repo, then add it to your global NPM toolset via.
-This will give you access to the `ref` command from the terminal:
-
     npm install -g meteor-private-package
+
+This will give you access to the `p-ref` command from the terminal.
 
 
 ## Usage
@@ -45,7 +44,7 @@ all your packages.
 
 To switch Meteorite to use these reference as symbolic links:
 
-    $ mrt-ref link
+    $ p-ref link
 
 This will update the `smart.json` file.  Then when it comes time to deploy, switch to a new branch
 and copy in the packages (using `p-ref copy`), then `push` to your favorite cloud service:
