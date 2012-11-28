@@ -7,7 +7,7 @@ colors    = require 'colors'
 
 
 PACKAGES_DIR = '.packages.copy'
-COPY_MODE    = 0777
+COPY_MODE    = 0o0777
 
 copyFile = (source, target, mode=COPY_MODE) ->
   # Perform the file copy operation.

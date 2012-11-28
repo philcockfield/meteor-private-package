@@ -6,9 +6,9 @@ SmartRef  = require './smart_ref'
 ROOT_PATH = process.env.PWD
 
 # Setup initial conditions.
-package = JSON.parse fs.readFileSync path.resolve __dirname, '../package.json'
+pkg = JSON.parse fs.readFileSync path.resolve __dirname, '../package.json'
 program
-  .version(package.version)
+  .version(pkg.version)
 
 # Define commands
 program
